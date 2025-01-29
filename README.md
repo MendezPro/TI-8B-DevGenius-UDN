@@ -1,4 +1,25 @@
 
+=======
+# TI-8B-DevGenius-UDN
+## Proyecto Integrador de un gimnasio (GYMBULLS)
+
+### Logos
+| Logo Gimnasio | Logo de Equipo |
+|--------------|--------------|
+| ![GymBulls](ruta/logo_gimnasio.png) | ![Cairolex](ruta/logo_equipo.png) |
+
+### Organigrama del Equipo
+
+## Colaboradores
+
+| Colaborador | Perfil | Contribuciones |
+|------------|--------|---------------|
+| **Orlando Méndez Montes** | [Perfil Amauri](ruta/perfil_amauri) | Líder del Proyecto, Desarrollador Backend |
+| **Zamira Cuevas Zamora** | [Perfil Alina](ruta/perfil_alina) | Documentadora Técnica |
+| **Julia Maday Martínez Santos** | [Perfil Carballo](ruta/perfil_carballo) | Desarrollador Frontend |
+| **Esperanza Cruz Galindo** | [Perfil Arroyo](ruta/perfil_arroyo) | Desarrollo de Base de Datos |
+
+---
 # Gym Bulls - Contexto del Negocio
 
 **Gym Bulls** es un centro de entrenamiento dedicado a ofrecer una experiencia de fitness única para personas de todas las edades y niveles. Nos enfocamos en proporcionar entrenamientos personalizados, clases grupales motivadoras y un ambiente de apoyo donde cada miembro pueda alcanzar sus objetivos de salud y bienestar. Nuestro enfoque integral combina tecnología, capacitación continua y un equipo de profesionales apasionados para ofrecer un servicio de calidad superior.
