@@ -24,4 +24,8 @@ En **Gym Bulls**, somos más que un gimnasio: somos tu compañero en el viaje ha
 
 Con un sistema integral de gestión que conecta todos los aspectos de nuestra operación, desde la planificación de entrenamientos hasta el servicio al cliente y la administración de recursos, garantizamos que tu experiencia con nosotros sea fluida, eficiente y siempre en crecimiento. En **Gym Bulls**, tu salud y satisfacción son nuestra prioridad.
 
+# Organigrama de Gym Bulls
+
+![Organigrama de Gym Bulls](img/gymo.jpg)
+
 
