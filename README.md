@@ -6,7 +6,7 @@
 ### Logos
 | Logo Gimnasio | Logo de Equipo |
 |--------------|--------------|
-| ![GymBulls](ruta/logo_gimnasio.png) | ![Cairolex](ruta/logo_equipo.png) |
+| ![GymBulls](imgs/logogym.jpg) | ![DevGenius](imgs/logo.png) |
 
 ### Organigrama del Equipo
 
