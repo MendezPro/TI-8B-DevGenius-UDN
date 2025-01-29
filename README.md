@@ -1,5 +1,4 @@
 
-=======
 # TI-8B-DevGenius-UDN
 ## Proyecto Integrador de un gimnasio (GYMBULLS)
 
@@ -8,7 +7,7 @@
 |--------------|--------------|
 | ![GymBulls](imgs/logogym.jpg) | ![DevGenius](imgs/logo.png) |
 
-### Organigrama del Equipo
+### Organigrama del Equipo DevGenius
 
 ## Colaboradores
 
@@ -47,6 +46,6 @@ Con un sistema integral de gestión que conecta todos los aspectos de nuestra op
 
 # Organigrama de Gym Bulls
 
-![Organigrama de Gym Bulls](img/gymo.jpg)
+![Organigrama de Gym Bulls](imgs/gymo.jpg)
 
 
