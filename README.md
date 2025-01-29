@@ -14,10 +14,10 @@
 
 | Colaborador | Perfil | Contribuciones |
 |------------|--------|---------------|
-| **Orlando Méndez Montes** | [Perfil Amauri](ruta/perfil_amauri) | Líder del Proyecto, Desarrollador Backend |
-| **Zamira Cuevas Zamora** | [Perfil Alina](ruta/perfil_alina) | Documentadora Técnica |
-| **Julia Maday Martínez Santos** | [Perfil Carballo](ruta/perfil_carballo) | Desarrollador Frontend |
-| **Esperanza Cruz Galindo** | [Perfil Arroyo](ruta/perfil_arroyo) | Desarrollo de Base de Datos |
+| **Orlando Méndez Montes** | [Perfil Orlando](ruta/perfil_amauri) | Líder del Proyecto, Desarrollador Backend |
+| **Zamira Cuevas Zamora** | [Perfil Zamira](ruta/perfil_alina) | Documentadora Técnica |
+| **Julia Maday Martínez Santos** | [Perfil Julia](ruta/perfil_carballo) | Desarrollador Frontend |
+| **Esperanza Cruz Galindo** | [Perfil Esperanza](ruta/perfil_arroyo) | Desarrollo de Base de Datos |
 
 ---
 # Gym Bulls - Contexto del Negocio
