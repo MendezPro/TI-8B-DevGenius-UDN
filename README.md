@@ -96,3 +96,22 @@ Desarrollar un gimnasio innovador y accesible que promueva el bienestar físico 
 
 ![Organigrama de Gym Bulls](imgs/gantt.png)
 
+
+# Organigrama del equipo 
+
+El equipo de desarrollo está compuesto por profesionales con roles definidos que garantizan el éxito del proyecto mediante la colaboración y especialización en distintas áreas clave.
+
+- Líder del Proyecto (Desarrollador Backend): 
+Responsable de la dirección general del proyecto, asegurando que se cumplan los objetivos y plazos establecidos. Además, se encarga del desarrollo de la lógica del servidor, la implementación de APIs y la gestión de la seguridad del sistema.
+- Desarrollador Backend:
+Encargado de la construcción y mantenimiento de la lógica del negocio, la optimización del rendimiento del servidor y la integración con bases de datos y servicios externos.
+- Documentadora Técnica:
+Responsable de la creación y mantenimiento de la documentación técnica del proyecto, incluyendo manuales de usuario, guías de instalación, diagramas y especificaciones de software.
+- Desarrollador de Base de Datos:
+Diseña, optimiza y gestiona las bases de datos del sistema, asegurando la integridad, seguridad y eficiencia en el almacenamiento y recuperación de datos.
+
+Desarrollador Frontend:
+Se encarga de la implementación de la interfaz de usuario, asegurando que el diseño sea atractivo, funcional y accesible. Trabaja con tecnologías como HTML, CSS y JavaScript para brindar una experiencia óptima a los usuarios.
+
+![Organigrama de Gym Bulls](imgs/udn.jpg)
+
