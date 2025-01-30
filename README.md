@@ -74,4 +74,6 @@ Desarrollar un gimnasio innovador y accesible que promueva el bienestar físico 
 6.	Capacitar a los usuarios sobre técnicas correctas de entrenamiento y recuperación para maximizar resultados y minimizar riesgos de lesiones.
 7.	Crear un ambiente motivador y comunitario donde los usuarios encuentren apoyo en entrenadores y compañeros para alcanzar sus metas.
 
+# Diagrama de Gantt 
 
+![Organigrama de Gym Bulls](imgs/gantt.png)
