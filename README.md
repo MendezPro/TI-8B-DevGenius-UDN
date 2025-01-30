@@ -74,6 +74,25 @@ Desarrollar un gimnasio innovador y accesible que promueva el bienestar físico 
 6.	Capacitar a los usuarios sobre técnicas correctas de entrenamiento y recuperación para maximizar resultados y minimizar riesgos de lesiones.
 7.	Crear un ambiente motivador y comunitario donde los usuarios encuentren apoyo en entrenadores y compañeros para alcanzar sus metas.
 
-# Diagrama de Gantt 
+
+## Lista de tecnologías
+
+### Frontend
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+
+### Backend
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+
+### Base de Datos
+![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+
+# Diagrama de Gantt
 
 ![Organigrama de Gym Bulls](imgs/gantt.png)
+
