@@ -48,4 +48,30 @@ Con un sistema integral de gestión que conecta todos los aspectos de nuestra op
 
 ![Organigrama de Gym Bulls](imgs/gymo.jpg)
 
+# Planteamiento del problema. 
+
+En la actualidad, muchas personas enfrentan dificultades para mantener un estilo de vida saludable debido a la falta de tiempo, motivación y acceso a entrenamientos adecuados. A pesar de la creciente conciencia sobre la importancia del ejercicio físico, la falta de planos de entrenamiento personalizados, asesoramiento profesional y herramientas tecnológicas efectivas limita el progreso y los resultados de quienes buscan mejorar su condición física, es necesario desarrollar un gimnasio que no solo proporcione acceso a equipos e instalaciones de calidad, sino que también integre programas de entrenamiento personalizados, tecnologías de monitoreo del rendimiento y un ambiente motivador que fomente la constancia y el bienestar general de los usuarios.
+
+
+# Propuesta de solucion 
+
+Para mejorar la efectividad y personalización de los entrenamientos en el gimnasio, proponemos el diseño e implementación de un sistema digital de entrenamiento que permita optimizar el desarrollo de rutinas, el seguimiento del progreso y la interacción entre entrenadores y usuarios. Este sistema facilitará la planificación de entrenamientos personalizados, centralizará la información de los clientes y proporcionará herramientas para la supervisión del rendimiento en tiempo real.
+
+# Módulo de entrenamiento
+
+El módulo de entrenamiento será el eje central del sistema, permitiendo la planificación y personalización de rutinas para cada usuario. Contará con un panel de control intuitivo, métricas de desempeño e informes de progreso para optimizar el rendimiento. Este módulo facilitará la asignación de entrenadores, la gestión de sesiones y la adaptación de entrenamientos, mejorando la experiencia y resultados de los usuarios.
+
+# Objetivo General  
+Desarrollar un gimnasio innovador y accesible que promueva el bienestar físico y mental de sus miembros, ofreciendo instalaciones de alta calidad, entrenamientos personalizados y tecnología avanzada para el monitoreo del progreso, con un enfoque en la motivación, la salud integral y la comunidad fitness.
+
+# Objetivos Específicos 
+
+1.	Desarrollar programas de entrenamiento personalizados según los objetivos individuales de cada usuario, ya sea para pérdida de peso, ganancia muscular, resistencia o rehabilitación.
+2.	Implementar técnicas de entrenamiento funcional que mejoren la movilidad, fuerza y resistencia, adaptándose a distintos niveles de condición física.
+3.	Incorporar tecnología para el monitoreo del rendimiento , como aplicaciones, wearables y análisis de datos, para optimizar los entrenamientos y el progreso de los usuarios.
+4.	Fomentar la educación en entrenamiento y nutrición mediante asesorías, talleres y material informativo, promoviendo un enfoque integral del bienestar.
+5.	Optimizar el uso de equipos y espacios del gimnasio , asegurando su disponibilidad y mantenimiento adecuado para una experiencia segura y eficiente.
+6.	Capacitar a los usuarios sobre técnicas correctas de entrenamiento y recuperación para maximizar resultados y minimizar riesgos de lesiones.
+7.	Crear un ambiente motivador y comunitario donde los usuarios encuentren apoyo en entrenadores y compañeros para alcanzar sus metas.
+
 
