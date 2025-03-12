@@ -1,7 +1,7 @@
 # Ignorar archivos de logs
 *.log
 
-# Ignorar archivos de compilación
+# Ignorar archivos de compilación :)
 node_modules/
 dist/
 build/
