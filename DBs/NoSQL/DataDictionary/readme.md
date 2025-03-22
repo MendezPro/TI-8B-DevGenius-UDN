@@ -4,87 +4,71 @@
 # 📖 Diccionario de Datos  
 
 ## 📌 Definición  
-Un **diccionario de datos** es un documento o repositorio que describe en detalle los elementos de datos utilizados en un sistema de información. Contiene información como nombres de los campos, tipos de datos, restricciones, relaciones entre tablas y su propósito dentro del sistema.  
+
+El diccionario de datos es un documento técnico que detalla la estructura, propiedades y relaciones de los datos dentro del sistema Gym Bulls. Este documento proporciona información esencial sobre los nombres de tablas, atributos, tipos de datos, restricciones y relaciones, garantizando una base de datos bien estructurada y eficiente.
 
 ## 🔍 Importancia  
 
 ### 📌 1. Estandarización  
-Garantiza que todos los usuarios y desarrolladores utilicen los mismos términos y definiciones, reduciendo ambigüedades y mejorando la coherencia en el manejo de los datos.  
+Establece un lenguaje común para desarrolladores, entrenadores y administradores, asegurando la coherencia en el manejo y manipulación de datos dentro del sistema.
 
-### 📌 2. Facilita el Diseño de Bases de Datos  
-Permite una planificación estructurada de la base de datos, asegurando la integridad y coherencia de los datos dentro del sistema.  
+## 📌 2. Optimización del Diseño de la Base de Datos
+Facilita la organización de los datos, garantizando integridad, normalización y eficiencia en el almacenamiento y recuperación de información.
 
 ### 📌 3. Mejora la Comunicación  
-Sirve como referencia común para **desarrolladores, analistas, administradores de bases de datos y usuarios**, promoviendo una comprensión clara de los datos y su estructura.  
+Permite que desarrolladores, analistas y usuarios comprendan la estructura de los datos, mejorando la colaboración en el desarrollo y mantenimiento del sistema.
 
 ### 📌 4. Documentación para Mantenimiento  
-Facilita futuras modificaciones y mejoras en el sistema sin afectar la estructura ni la consistencia de los datos a-lmacenados.  
+Sirve como referencia clave para futuras mejoras o modificaciones en la base de datos sin comprometer su estabilidad. 
 
 ### 📌 5. Cumplimiento de Normativas  
-Contribuye a garantizar que el sistema cumpla con regulaciones de **seguridad y privacidad de datos** como **GDPR** o **HIPAA**, reduciendo riesgos legales y operativos.  
+Ayuda a cumplir con regulaciones de seguridad y privacidad de datos como GDPR o protección de datos personales, reduciendo riesgos operativos y legales.
 
-
----
-# 8°A IDGS - 2025 -   Caso de Estudio : Hospital
----
-## 🏥 Aplicación en el Proyecto  
-Dado que este proyecto está orientado a la **gestión de Recursos Humanos en un Hospital de Nivel 4**, el diccionario de datos será clave para definir correctamente atributos como:  
-
-|*No.*|*Entidad (Tabla)* |*UDNs Dueño*|*UDNs Escritura*|*UDNs Lectura*|*Documentador*|
-|----------|--------|---|-------------|---|----|
-|1|Mantenimientos_Equipamiento|RM|RM|Todas|Todo el Equipo|
-|2|Horario_Empleado|RH|RH|Todas|MTI. Marco R.|
-|3|ServiciosMedicos_Equipamiento|SM|SM,RM|Toda|Todo el Equipo|
-|4|Expediente_Clinico|RG|RG|Todas|Jazziel Rodríguez|
-|5|Inventario|FR|FR|Todas|Todo el Equipo|
-
-
-Abreviaturas de UDN's
-
-   **RM:** Recursos Materiales
-
-   **RH:** Recursos Humanos
-
-   **SM:** Servicios Médicos
-
-   **RG:** Registros Médicos
-   
-   **FR:** Farmacia
-
-
-
----
-# 8°B IDGS - 2025 -   Caso de Estudio : Gimnasio
----
 ## 🏋️ Aplicación en el Proyecto  
-Dado que este proyecto está orientado a la **gestión de Recursos Humanos en un Hospital de Nivel 4**, el diccionario de datos será clave para definir correctamente atributos como:  
 
+El diccionario de datos de Gym Bulls se centra en la gestión integral del gimnasio, asegurando un registro detallado y estructurado de entrenamientos, usuarios, suscripciones, pagos y seguimiento del progreso físico.
+
+El diccionario de datos será clave para definir correctamente atributos como:  
 
 |*No.*|*Entidad (Tabla)* |*UDNs Dueño*|*UDNs Escritura*|*UDNs Lectura*|*Documentador*|
 |----------|--------|---|-------------|---|----|
-|1|Bitacora|PM - Marco|Todas|Ninguna|MTI. Marco R.|
-|2|Cliente|SaC|SaC, CLI|Todas|Jaime V.|
-|3|Colaborador|RH|RH| Por definir|Lemuel E.|
-|4|Dieta|TR|TR, CLI|Por definir|Orlando M.|
-|5|Ejercicio|TR|TR|TR, SaC, CLI|Brayan G.|
-|6|Equipamiento|RM|RM|Por definir|Mariano F.|
-|7|Espacio|RM|RM|Por definir|Mariano. F.|
-|8|Expediente Médico|TR|TR|Por definir|Julia M.|
-|9|Horario|RH|RH|Por definir|Jose Luis C.|
+|1|Expediente_Medico|TR|TR|Todas|Julia M.|
+|2|Indicador_Nutricional|TR|TR|Todas|Orlando M.|
+|3|Dieta|TR|TR, CLI|Por definir|Orlando M.|
+|4|Expediente Médico|TR|TR|Todas|Julia M.|
+|5|Objetivo_Rutina|TR|TR|Todas|Esperanza C.|
+
+## 📂 Organización del Diccionario de Datos
+
+La información del sistema se documenta en los siguientes módulos:
+
+- Tablas → Documentación individual de cada tabla, describiendo sus atributos y relaciones.
+- Relaciones → Explicación de claves foráneas y relaciones entre tablas con diagramas.
+- Restricciones → Definición de restricciones (PRIMARY KEY, FOREIGN KEY, UNIQUE, etc.).
+- Tipos de Datos → Explicación de los tipos de datos usados en cada atributo.
+- Índices → Optimización de consultas y rendimiento.
 
 
-Abreviaturas de UDN's
+## 🔹 Beneficios de este Diccionario de Datos
 
-   **GR:** Gerencia
-   **RM:** Recursos Materiales
-   **RH:** Recursos Humanos
+✅ Facilita el desarrollo y mantenimiento del sistema.
+✅ Reduce errores y ambigüedades en la manipulación de datos.
+✅ Optimiza la eficiencia en la gestión de la información del gimnasio.
+✅ Asegura la compatibilidad con futuras integraciones tecnológicas.
 
-
+## NOTA
 
 Este documento servirá como referencia fundamental para garantizar la precisión y confiabilidad de la información dentro del sistema.  
 
+## 👥 Equipo de Desarrollo  
 
----
-Creado por: [@MRVargas19](https://github.com/MRVargas19).
-Corregido por: [@MTI-MarcoRH](https://github.com/MTI-MarcoRH)
+| Integrante | Contacto | Rol | Observaciones |
+|------------|----------|----------------------------|------------------|
+| **Orlando Méndez Montes** | [@MendezPro](https://github.com/MendezPro) | Líder de Desarrollo, Frontend y Backend | ✅ Revisado y aprobado |
+| **Zamira Cuevas Zamora** | [@ZamyCuevas](https://github.com/ZamyCuevas) | Documentación técnica | ❌ Sin Comentarios |
+| **Julia Maday Martinez Santos** | [@JuliaMaday](https://github.com/JuliaMaday) | Desarrollador de Bases de Datos | ❌ Sin Comentarios |
+| **Esperanza Cruz Galindo** | [@Dulce990](https://github.com/Dulce990) | Desarrollador FrontEnd | ❌ Sin Comentarios |
 
+### ✒️ **Datos del Autor** 
+
+**Creado por:** [@ZamyCuevas](https://github.com/ZamyCuevas)  
