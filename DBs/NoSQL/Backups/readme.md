@@ -1,16 +1,17 @@
 # Automated ![UM](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-La carpeta **Automated** se utiliza para almacenar scripts, pruebas y procesos automatizados que facilitan tareas repetitivas dentro de un proyecto. Su contenido puede incluir secuencias de comandos para automatizar pruebas, configuraciones o procesos de despliegue. El propósito principal de esta carpeta es mejorar la eficiencia y reducir el trabajo manual, asegurando que tareas como la verificación de código o la implementación se realicen de manera más rápida y consistente, dependiendo del tipo de proyecto y las herramientas empleadas
+Manual Backups MongoDB MongoDB Atlas
+En esta carpeta se almacenan los scripts para realizar backups de la/s bases de datos NoSQL de forma manual tanto parciales como completos de toda la base de datos.
 
-## Equipo de Desarrollo
+## 👥 Equipo de Desarrollo  
 
-|Integrante|Contacto|Rol|Observaciones|
-|------------|--------|---|---|
-|Carlos Armando Aranda Hernandez|[@Carlicsus](https://github.com/Carlicsus)|Desarrollador de Backend|...|
-|Carolina Arias Reyes|[@Pozole10](https://github.com/Pozole10)|Desarrollador de Frontend|...|
-|Edgar Cruz Salas|[@Ederdal](https://github.com/Ederdal)|Desarrollador de Base de datos|...|
-|Ángel Zacek Gutiérrez Cruz|[@Zac-ek](https://github.com/Zac-ek)|Desarrollador Backend|...|
-|Diego Hernández Mota|[@MotaBytes](https://github.com/MotaBytes)|Desarrollador Frontend|...|
-|Raul Reyes batalla|[@RaulReyesB](https://github.com/RaulReyesB)|Desarrollador Base de datos|...|
+| Integrante | Contacto | Rol | Observaciones |
+|------------|----------|----------------------------|------------------|
+| **Orlando Méndez Montes** | [@MendezPro](https://github.com/MendezPro) | Líder de Desarrollo, Frontend y Backend | ✅ Revisado y aprobado |
+| **Zamira Cuevas Zamora** | [@ZamyCuevas](https://github.com/ZamyCuevas) | Documentación técnica | ❌ Sin Comentarios |
+| **Julia Maday Martinez Santos** | [@JuliaMaday](https://github.com/JuliaMaday) | Desarrollador de Bases de Datos | ❌ Sin Comentarios |
+| **Esperanza Cruz Galindo** | [@Dulce990](https://github.com/Dulce990) | Desarrollador FrontEnd | ❌ Sin Comentarios |
 
-Creado por [@Pozole10](https://github.com/Pozole10)
+### ✒️ **Datos del Autor** 
+
+**Creado por:** [@ZamyCuevas](https://github.com/ZamyCuevas)  
