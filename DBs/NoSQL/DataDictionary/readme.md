@@ -32,11 +32,7 @@ El diccionario de datos será clave para definir correctamente atributos como:
 
 |*No.*|*Entidad (Tabla)* |*UDNs Dueño*|*UDNs Escritura*|*UDNs Lectura*|*Documentador*|
 |----------|--------|---|-------------|---|----|
-|1|Expediente_Medico|TR|TR|Todas|Julia M.|
-|2|Indicador_Nutricional|TR|TR|Todas|Orlando M.|
-|3|Dieta|TR|TR, CLI|Por definir|Orlando M.|
-|4|Expediente Médico|TR|TR|Todas|Julia M.|
-|5|Objetivo_Rutina|TR|TR|Todas|Esperanza C.|
+|1|Expediente Médico|TR|TR|Todas|Julia M.|
 
 ## 📂 Organización del Diccionario de Datos
 
@@ -51,10 +47,10 @@ La información del sistema se documenta en los siguientes módulos:
 
 ## 🔹 Beneficios de este Diccionario de Datos
 
-✅ Facilita el desarrollo y mantenimiento del sistema.
-✅ Reduce errores y ambigüedades en la manipulación de datos.
-✅ Optimiza la eficiencia en la gestión de la información del gimnasio.
-✅ Asegura la compatibilidad con futuras integraciones tecnológicas.
+- ✅ Facilita el desarrollo y mantenimiento del sistema.
+- ✅ Reduce errores y ambigüedades en la manipulación de datos.
+- ✅ Optimiza la eficiencia en la gestión de la información del gimnasio.
+- ✅ Asegura la compatibilidad con futuras integraciones tecnológicas.
 
 ## NOTA
 

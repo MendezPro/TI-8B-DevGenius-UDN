@@ -12,16 +12,15 @@ Esta carpeta contiene la documentación y recursos relacionados con bases de dat
 - **Scripts**: Almacena scripts útiles para la administración y manejo de las bases de datos.
 - **readme.md**: Este archivo de documentación.
 
+## 👥 Equipo de Desarrollo  
 
-| Integrante                        | Contacto                                      | Rol            | Observaciones     |
-|-----------------------------------|-----------------------------------------------|----------------|-------------------|
-| Luis Octavio Lopez Martinez       | [LOctavioDev](https://github.com/LOctavioDev) | Backend        | Sin comentarios   |
-| Jose Alejandro Briones Arroyo     | [alexba2004](https://github.com/alexba2004)   | DevOps         | Sin comentarios   |
-| Jose Angel Fosado Animas          | [inncol-eortiz](https://github.com/inncol-eortiz) | Front Web  | Sin comentarios   |
-| Eli Haziel Ortiz Ramirez          | [BraytoGBDX](https://github.com/BraytoGBDX)   | Front Web      | Sin comentarios   |
-| Jaziel Rodriguez Lopez            | [JazzoLopez4](https://github.com/JazzoLopez4) | Backend        | Sin comentarios   |
-| Neftali Arturo Hernandez Vergara  | [Nefta11](https://github.com/Nefta11)         | Front Mobile   | Sin comentarios   |
-| Leslie Janet Aparicio Castro      | [leslie-aparicio](https://github.com/leslie-aparicio) | Documentacion | Sin comentarios   |
+| Integrante | Contacto | Rol | Observaciones |
+|------------|----------|----------------------------|------------------|
+| **Orlando Méndez Montes** | [@MendezPro](https://github.com/MendezPro) | Líder de Desarrollo, Frontend y Backend | ✅ Revisado y aprobado |
+| **Zamira Cuevas Zamora** | [@ZamyCuevas](https://github.com/ZamyCuevas) | Documentación técnica | ❌ Sin Comentarios |
+| **Julia Maday Martinez Santos** | [@JuliaMaday](https://github.com/JuliaMaday) | Desarrollador de Bases de Datos | ❌ Sin Comentarios |
+| **Esperanza Cruz Galindo** | [@Dulce990](https://github.com/Dulce990) | Desarrollador FrontEnd | ❌ Sin Comentarios |
 
+### ✒️ **Datos del Autor** 
 
-Creado por [LOctavioDev](https://github.com/LOctavioDev)
+**Creado por:** [@ZamyCuevas](https://github.com/ZamyCuevas)  
