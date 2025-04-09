@@ -1,14 +1,38 @@
- # MER (Modelo Entidad Relación) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=for-the-badge)
+# 🗺️ MER (Modelo Entidad-Relación)  
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=for-the-badge)
 
- En esta sección se detalla el diagrama MER (Modelo Entidad-Relación), el cual es una herramienta clave para el diseño de bases de datos. El diagrama MER se utiliza para representar la estructura de la base de datos de una manera gráfica, mostrando las entidades (tablas), sus atributos (campos), y las relaciones entre ellas. Este modelo facilita la comprensión de la base de datos y es especialmente útil cuando se implementa en bases de datos relacionales como MySQL.
+## 📌 Descripción  
+Esta sección presenta el **Diagrama MER (Modelo Entidad-Relación)**, una herramienta fundamental para el diseño de bases de datos relacionales. Su propósito es representar de forma **gráfica** la estructura lógica de la base de datos antes de su implementación.
 
-# Equipo de Desarrollo
+El MER muestra:
+- **Entidades**: Equivalentes a tablas.
+- **Atributos**: Campos de cada entidad.
+- **Relaciones**: Cómo se conectan las entidades entre sí (1:1, 1:N, N:M).
 
-| Integrantes               | Contacto                                                   | Rol                          | Observaciones         |
-| ------------------------- | ---------------------------------------------------------- | ---------------------------- | --------------------- |
-| Jaime Vázquez Santiago    | [@Jaimevs](https://github.com/jaimevs)                     | Líder de Desarrollo Backend  | ❌ Sin Comentarios     |
-| Martin Vargas Gutierrez   | [@MRVargas19](https://github.com/MRVargas19)               | Desarrollador FrontEnd       | ❌ Revisado y aprobado |
-| Ana Karen Crisanto Reyes  | [@AnaCrisanto](https://github.com/AnaCrisanto)             | Desarrollador de DataBases   | ✔️ Revisado y aprobado |
-| Alejandro Gonzalez Romero | [@AlejandroRomero17](https://github.com/AlejandroRomero17) | Líder de Desarrollo FrontEnd | ❌ Sin Comentarios     |
+Este modelo permite:
+- Comprender de forma clara la organización de los datos.
+- Identificar las llaves primarias y foráneas.
+- Validar la integridad referencial antes de codificar el esquema físico.
+- Servir como guía de desarrollo para backend y modelado de datos.
 
-Creado por: [@AnaCrisanto](https://github.com/AnaCrisanto)
+## 📌 Beneficios del MER  
+✅ Facilita la comunicación entre diseñadores y desarrolladores.  
+✅ Ayuda a detectar errores de modelado antes de implementar.  
+✅ Sirve como documento de referencia en el ciclo de vida del sistema.  
+✅ Es compatible con herramientas como **MySQL Workbench**, **Draw.io**, **DBDesigner**, entre otros.
+
+---
+
+## 👥 Equipo de Desarrollo  
+
+| Integrante | Contacto | Rol | Observaciones |
+|------------|----------|----------------------------|------------------|
+| **Orlando Méndez Montes** | [@MendezPro](https://github.com/MendezPro) | Líder de Desarrollo, Frontend y Backend | ✅ Revisado y aprobado |
+| **Zamira Cuevas Zamora** | [@ZamyCuevas](https://github.com/ZamyCuevas) | Documentación técnica | ❌ Sin Comentarios |
+| **Julia Maday Martinez Santos** | [@JuliaMaday](https://github.com/JuliaMaday) | Desarrollador de Bases de Datos | ❌ Sin Comentarios |
+| **Esperanza Cruz Galindo** | [@Dulce990](https://github.com/Dulce990) | Desarrollador FrontEnd | ❌ Sin Comentarios |
+
+### ✒️ **Datos del Autor**
+
+**Creado por:** [@ZamyCuevas](https://github.com/ZamyCuevas)
+
