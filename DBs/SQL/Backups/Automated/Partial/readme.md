@@ -10,13 +10,16 @@ Registros de actividad: Archivos de logs con información sobre la ejecución de
 Estos archivos son fundamentales para garantizar la seguridad y disponibilidad de los datos, permitiendo una recuperación eficiente en caso de necesidad.
 
 
-|Integrante|Contacto|Rol|Observaciones|
-|------------|--------|---|---|
-|José Daniel Loza Marín |[@PpGrillo1511](https://github.com/PpGrillo1511)|Líder y Desarrollador BackEnd|✔️  Revisado y aprobado|
-|Griselda Cabrera Franco |[@gris12elda](https://github.com/gris12elda)|Desarrollador FronEnd|❌ Sin Comentarios|
-|Jareni Gómez Juan |[@jareni02](https://github.com/jareni02)|Desarrollador FronEnd|✔️ Sin Comentarios|
-|Luis Abdiel Rivera Gayosso |[@LuisAbdielRivera](https://github.com/LuisAbdielRivera)|Desarrollador Backend|❌ Sin Comentarios|
-|Esaú Vargas Álvarez |[@Giggs007](https://github.com/Giggs007)|Desarrollador Backend|❌ Sin Comentarios|
+## 👥 Equipo de Desarrollo  
 
----
-Hecho por: [@jareni02](https://github.com/jareni02)
+| Integrante | Contacto | Rol | Observaciones |
+|------------|----------|----------------------------|------------------|
+| **Orlando Méndez Montes** | [@MendezPro](https://github.com/MendezPro) | Líder de Desarrollo, Frontend y Backend | ✅ Revisado y aprobado |
+| **Zamira Cuevas Zamora** | [@ZamyCuevas](https://github.com/ZamyCuevas) | Documentación técnica | ❌ Sin Comentarios |
+| **Julia Maday Martinez Santos** | [@JuliaMaday](https://github.com/JuliaMaday) | Desarrollador de Bases de Datos | ❌ Sin Comentarios |
+| **Esperanza Cruz Galindo** | [@Dulce990](https://github.com/Dulce990) | Desarrollador FrontEnd | ❌ Sin Comentarios |
+
+### ✒️ **Datos del Autor**
+
+**Creado por:** [@ZamyCuevas](https://github.com/ZamyCuevas)
+
