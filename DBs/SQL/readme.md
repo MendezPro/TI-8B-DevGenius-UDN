@@ -4,24 +4,32 @@
 
 ## 📌 Descripción  
 
-Este directorio contiene todos los **recursos relacionados con la base de datos relacional (SQL)** del proyecto. Se trabaja principalmente con **MySQL**, organizando el desarrollo estructurado de la base de datos, incluyendo su modelado, scripts de creación, consultas, triggers, eventos y documentación.
+Este directorio contiene todos los **recursos relacionados con la base de datos relacional (SQL)** del proyecto. Se trabaja principalmente con **MySQL**, organizando el desarrollo estructurado de la base de datos, incluyendo su **modelado**, **creación de estructuras**, **automatización**, **consultas** y **documentación técnica**.
 
-La estructura y contenido de esta carpeta permite una administración eficiente de los datos, garantizando integridad, seguridad y rendimiento.
+Todo está organizado por subcarpetas según su función, lo que facilita la escalabilidad, el mantenimiento y el despliegue eficiente de la base de datos.
 
 ---
 
-## 📁 Estructura del directorio
+## 📁 Estructura del Directorio
 
-| Carpeta / Archivo | Descripción |
-|-------------------|-------------|
-| `Scripts/`        | Scripts de creación de estructuras, inserción de datos y procedimientos almacenados. |
-| `Queries/`        | Consultas SQL para recuperar, insertar, actualizar o eliminar información. |
-| `Triggers/`       | Disparadores automáticos para mantener la integridad de los datos. |
-| `Events/`         | Programación de tareas automatizadas mediante eventos SQL. |
-| `MER/`            | Diagrama del Modelo Entidad-Relación para el diseño lógico de la base de datos. |
-| `MERE/`           | Modelo Entidad-Relación Extendido con jerarquías, especialización y generalización. |
-| `MR/`             | Modelo Relacional con las estructuras tabulares finales de la base de datos. |
-| `Backups/`        |
+| Carpeta         | Contenido                                                                 |
+|------------------|--------------------------------------------------------------------------|
+| `creation/`      | Scripts para crear tablas, relaciones y restricciones iniciales.        |
+| `functions/`     | Funciones SQL reutilizables para cálculos y lógica del sistema.         |
+| `triggers/`      | Triggers para automatizar acciones en inserciones, actualizaciones, etc.|
+| `events/`        | Eventos programados para mantenimiento y tareas recurrentes.            |
+| `poblate/`       | Inserciones de datos de prueba para simular información real.           |
+| `queries/`       | Consultas personalizadas de selección, inserción, actualización y borrado.|
+| `models/`        | Diagramas y esquemas del modelo relacional y entidades del sistema.     |
+
+---
+
+## 📌 Buenas Prácticas
+
+- Asegúrate de ejecutar los scripts **en orden** cuando crees la base de datos desde cero.
+- Cada carpeta contiene su propio `README.md` explicando su función y ejemplos.
+- Utiliza entornos de prueba antes de aplicar cambios estructurales en producción.
+- Toda modificación debe estar documentada y registrada mediante control de versiones (`git`).
 
 ---
 
