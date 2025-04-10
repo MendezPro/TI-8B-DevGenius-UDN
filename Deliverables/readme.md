@@ -7,11 +7,3 @@ La carpeta **Deliverables** contiene todos los **entregables formales del proyec
 
 Cada archivo representa un producto de trabajo validado por el equipo, ya sea para presentación, revisión o entrega final.
 
----
-
-## 📁 Contenido del Directorio
-
-| Archivo / Carpeta | Descripción |
-|-------------------|-------------|
-| `Plan_de_Proyecto/` | Documentación sobre alcance, objetivos, cronograma, recursos
-
