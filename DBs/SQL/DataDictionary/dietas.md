@@ -1,40 +1,22 @@
-## 🗂️ Table: `tbd_dietas`
+## 🗂️ Table: `tbc_ejercicios`
 
-**📝 Description**: Esta tabla almacena la información de las dietas asignadas a los usuarios, incluyendo el objetivo nutricional, tipo y frecuencia de ejercicios recomendados, consumo calórico diario y observaciones. Sirve como base para personalizar planes alimenticios en función del estado físico y metas del usuario.
+**📝 Description**: Esta tabla almacena información detallada sobre los ejercicios disponibles dentro del sistema, incluyendo su tipo, nivel de dificultad, recomendaciones, restricciones y estado. Sirve como base para construir rutinas de entrenamiento personalizadas para los usuarios.
 
 ### 🗄️ Columns
+| Column                  | DataType                                        | PK  | FK  | NN  | UQ  | BIN  | UN  | ZF  | AI  | Default         | Comment                                                                                                                                   |
+|-------------------------|-------------------------------------------------|-----|-----|-----|-----|------|-----|-----|-----|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| `ID`                    | `INT`                                           | ✅  |     | ✅  |     |      |     |     | ✅  | `AUTO_INCREMENT` | Descripción: Atributo identificador numérico incremental que distingue de manera única el ejercicio.<br> Naturaleza: Cuantitativa.<br> Dominio: Enteros positivos.<br> Composición: 1{0-9}. |
+| `Nombre`                | `VARCHAR(255)`                                  |     |     | ✅  |     |      |     |     |     |                 | Descripción: Valor que hace referencia al ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos, vocales con tilde, espacio separador.<br> Composición: 1{A-Z a-z}255. |
+| `Descripcion`           | `VARCHAR(255)`                                  |     |     | ✅  |     |      |     |     |     |                 | Descripción: Explicación del ejercicio y cómo llevarlo a cabo.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos, vocales con tilde, espacio separador.<br> Composición: 1{A-Z a-z}255. |
+| `Video`                 | `VARCHAR(255)`                                  |     |     |     |     |      |     |     |     |                 | Descripción: Nombre y extensión del archivo de video referente a la realización del ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfanuméricos y extensión permitida de video (e.g., .mp4, .avi).<br> Composición: 1{A-Za-z0-9_ -} + '.' + {mp4 avi mov webm}. |
+| `Tipo`                  | `ENUM('Aerobico', 'Resistencia', 'Flexibilidad', 'Fuerza')` |     |     | ✅  |     |      |     |     |     |                 | Descripción: Tipo de ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Conjunto de valores permitidos.<br> Composición: ['Aerobico', 'Resistencia', 'Flexibilidad', 'Fuerza']. |
+| `Estatus`               | `TINYINT(1)`                                    |     |     | ✅  |     |      |     |     |     |                 | Descripción: Estado del ejercicio (activo o inactivo).<br> Naturaleza: Cualitativa.<br> Dominio: Valores 0 y 1.<br> Composición: {0|1}. |
+| `Dificultad`            | `ENUM('Basico', 'Intermedio', 'Avanzado')`     |     |     | ✅  |     |      |     |     |     |                 | Descripción: Dificultad para realizar el ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Conjunto de valores permitidos.<br> Composición: ['Basico', 'Intermedio', 'Avanzado']. |
+| `Fecha_Registro`        | `DATETIME`                                      |     |     | ✅  |     |      |     |     |     |                 | Descripción: Fecha de registro del ejercicio en la base de datos.<br> Naturaleza: Cuantitativa.<br> Dominio: Fecha y hora en formato 'YYYY-MM-DD HH:MM:SS'.<br> Composición: Año = 4{0-9}, Mes = [01–12], Día = [01–31], Hora = [00–23], Minuto = [00–59], Segundo = [00–59]. |
+| `Fecha_Actualizacion`   | `DATETIME`                                      |     |     | ✅  |     |      |     |     |     |                 | Descripción: Fecha de la última actualización del ejercicio en la base de datos.<br> Naturaleza: Cuantitativa.<br> Dominio: Fecha y hora en formato 'YYYY-MM-DD HH:MM:SS'.<br> Composición: Año = 4{0-9}, Mes = [01–12], Día = [01–31], Hora = [00–23], Minuto = [00–59], Segundo = [00–59]. |
+| `Recomendaciones`       | `VARCHAR(255)`                                  |     |     |     |     |      |     |     |     |                 | Descripción: Recomendaciones para realizar el ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos, vocales con tilde, espacio separador.<br> Composición: 0{A-Z a-z }255. |
+| `Restricciones`         | `VARCHAR(255)`                                  |     |     |     |     |      |     |     |     |                 | Descripción: Restricciones para realizar el ejercicio (e.g., tipo de ropa recomendada).<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos, vocales con tilde, espacio separador.<br> Composición: 0{A-Z} 255. |
 
-| Column | DataType | PK | FK | NN | UQ | BIN | UN | ZF | AI | Default | Comment |
-|--------|----------|----|----|----|----|-----|----|----|----|---------|---------|
-| `id` | `INT` | 🔑 |  | ✅ |  |  | ✅ |  | ✅ |  | Descripción: Identificador único de la dieta.<br>Naturaleza: Numérico.<br>Dominio: Entero positivo autoincrementable. |
-| `objetivo` | `ENUM('Perdida de Peso', 'Aumento de masa muscular', 'Mantenimiento')` |  |  | ✅ |  |  |  |  |  |  | Descripción: Objetivo principal de la dieta.<br>Naturaleza: Cualitativo.<br>Dominio: Enumeración de valores predefinidos.<br>Composición: 0("Perdida de Peso" \| "Aumento de masa muscular" \| "Mantenimiento") |
-| `tipo_ejercicios_recomendados` | `ENUM('Cardio', 'Levantamiento de pesas', 'Ejercicios Tecnicos')` |  |  | ✅ |  |  |  |  |  |  | Descripción: Tipo de ejercicios recomendados con la dieta.<br>Naturaleza: Cualitativo.<br>Dominio: Enumeración (ENUM).<br>Composición: 0("Cardio" \| "Levantamiento de pesas" \| "Ejercicios Técnicos") |
-| `dias_ejercicio` | `ENUM('1 dia a la semana', '2 dias a la semana', '3 dias a la semana', '4 dias a la semana', '5 dias a la semana')` |  |  | ✅ |  |  |  |  |  |  | Descripción: Frecuencia semanal recomendada de ejercicio físico.<br>Naturaleza: Cualitativo.<br>Dominio: Enumeración de días por semana. |
-| `calorias_diarias` | `FLOAT` |  |  | ✅ |  |  | ✅ |  |  |  | Descripción: Cantidad de calorías diarias recomendadas.<br>Naturaleza: Cuantitativo.<br>Dominio: Número decimal positivo. |
-| `observaciones` | `TEXT` |  |  |  |  |  |  |  |  |  | Descripción: Comentarios adicionales sobre la dieta.<br>Naturaleza: Cualitativo.<br>Dominio: Texto libre (a-z\|A-Z). |
-| `estatus` | `BOOLEAN` |  |  | ✅ |  | ✅ |  |  |  | `TRUE` | Descripción: Indica si la dieta está activa (TRUE) o inactiva (FALSE).<br>Naturaleza: Binario.<br>Dominio: 1 bit (0 o 1). |
-| `fecha_registro` | `DATETIME` |  |  | ✅ |  |  |  |  |  | `CURRENT_TIMESTAMP` | Descripción: Fecha y hora en que se registró la dieta.<br>Naturaleza: Cuantitativo.<br>Dominio: Formato de fecha y hora (YYYY-MM-DD HH:MM:SS). |
-| `fecha_actualizacion` | `DATETIME` |  |  |  |  |  |  |  |  | `CURRENT_TIMESTAMP` (on update) | Descripción: Fecha y hora de la última actualización de la dieta.<br>Naturaleza: Cuantitativo.<br>Dominio: Formato de fecha y hora (YYYY-MM-DD HH:MM:SS). |
-| `user_id` | `INT` |  | ✅ |  |  |  | ✅ |  |  |  | Descripción: Identificador del usuario asociado a la dieta.<br>Naturaleza: Numérico.<br>Dominio: Entero positivo que actúa como llave foránea hacia `tbb_usuarios.id`. |
-
----
-
-### 📘 Diccionario de Datos: Tabla `tbd_dietas`
-
-| **Nombre del Campo**           | **Tipo de Dato** | **Tamaño / Formato**                                 | **Nulo** | **Descripción**                                                                 |
-|--------------------------------|------------------|------------------------------------------------------|----------|----------------------------------------------------------------------------------|
-| `id`                           | INTEGER          | Autoincremental                                      | No       | Identificador único de la dieta registrada en el sistema.                       |
-| `objetivo`                     | ENUM             | 'Perdida de Peso' \| 'Aumento de masa muscular' \| 'Mantenimiento' | No       | Objetivo nutricional principal del usuario.                                     |
-| `tipo_ejercicios_recomendados`| ENUM             | 'Cardio' \| 'Levantamiento de pesas' \| 'Ejercicios Técnicos' | No       | Tipo de ejercicios sugeridos para complementar la dieta.                        |
-| `dias_ejercicio`              | ENUM             | '1 dia a la semana' a '5 dias a la semana'           | No       | Frecuencia semanal de ejercicio recomendada.                                    |
-| `calorias_diarias`            | FLOAT            | Número decimal                                       | No       | Cantidad recomendada de calorías a consumir por día.                            |
-| `observaciones`               | TEXT             | -                                                    | Sí       | Comentarios u observaciones adicionales sobre la dieta.                         |
-| `estatus`                     | BOOLEAN          | 0 (Inactivo) / 1 (Activo)                            | No       | Indica si la dieta está activa o no.                                            |
-| `fecha_registro`              | DATETIME         | AAAA-MM-DD HH:MM:SS                                  | No       | Fecha y hora en que fue registrada la dieta.                                    |
-| `fecha_actualizacion`         | DATETIME         | AAAA-MM-DD HH:MM:SS                                  | Sí       | Fecha y hora de la última actualización de la dieta.                            |
-| `user_id`                     | INTEGER          | -                                                    | Sí       | ID del usuario asociado a la dieta. (Llave foránea a la tabla de usuarios).     |
-
----
 
 ## 👥 Equipo de Desarrollo  
 
@@ -45,6 +27,7 @@
 | **Julia Maday Martinez Santos** | [@JuliaMaday](https://github.com/JuliaMaday) | Desarrollador de Bases de Datos | ❌ Sin Comentarios |
 | **Esperanza Cruz Galindo** | [@Dulce990](https://github.com/Dulce990) | Desarrollador FrontEnd | ❌ Sin Comentarios |
 
-### ✒️ **Datos del Autor** 
+### ✒️ **Datos del Autor**
 
-**Creado por:** [@ZamyCuevas](https://github.com/ZamyCuevas)  
+**Creado por:** [@ZamyCuevas](https://github.com/ZamyCuevas)
+

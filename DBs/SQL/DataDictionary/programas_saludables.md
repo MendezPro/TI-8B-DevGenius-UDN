@@ -4,35 +4,19 @@
 
 ### 🗄️ Columns
 
-| Column              | DataType      | PK  | FK | NN  | UQ | BIN | UN | ZF | AI  | Default | Comment |
-|---------------------|---------------|-----|----|-----|----|-----|----|----|-----|---------|---------|
-| `id`                | `INT`         | 🔑  |    | ✅  |    |     | ✅ |    | ✅  |         | Descripción: Identificador único del programa saludable.<br>Naturaleza: Numérico.<br>Dominio: Entero positivo autoincrementable. |
-| `nombre`            | `VARCHAR(255)`|     |    | ✅  |    |     |    |    |     |         | Descripción: Nombre del programa saludable.<br>Naturaleza: Cualitativo.<br>Dominio: Texto de hasta 255 caracteres. |
-| `descripcion`       | `VARCHAR(500)`|     |    |     |    |     |    |    |     |         | Descripción: Detalles y objetivos del programa.<br>Naturaleza: Cualitativo.<br>Dominio: Texto libre hasta 500 caracteres. |
-| `fecha_inicio`      | `DATETIME`    |     |    | ✅  |    |     |    |    |     |         | Descripción: Fecha de inicio del programa.<br>Naturaleza: Temporal.<br>Dominio: Formato datetime. |
-| `fecha_finalizacion`| `DATETIME`    |     |    |     |    |     |    |    |     |         | Descripción: Fecha en la que finaliza el programa (puede ser nula).<br>Naturaleza: Temporal. |
-| `id_dietas`         | `VARCHAR(255)`|     |    |     |    |     |    |    |     |         | Descripción: Referencia(s) textual(es) a las dietas asociadas.<br>Naturaleza: Cualitativo.<br>Dominio: Texto. |
-| `id_entrenador`     | `VARCHAR(255)`|     |    |     |    |     |    |    |     |         | Descripción: Identificador del entrenador asignado.<br>Naturaleza: Cualitativo.<br>Dominio: Texto. |
-| `id_user`           | `INT`         |     | ✅ |     |    |     | ✅ |    |     |         | Descripción: Identificador del usuario que sigue el programa.<br>Naturaleza: Numérico.<br>Dominio: Llave foránea hacia `tbb_usuarios.id`. |
-| `fecha_registro`    | `DATETIME`    |     |    | ✅  |    |     |    |    |     |         | Descripción: Fecha y hora en que fue creado el programa.<br>Naturaleza: Temporal. |
-| `fecha_actualizacion`| `DATETIME`   |     |    |     |    |     |    |    |     |         | Descripción: Última fecha de modificación del programa.<br>Naturaleza: Temporal. |
+| Column               | DataType         | PK  | FK  | NN  | UQ  | BIN  | UN  | ZF  | AI  | Default            | Comment                                                                                                                                                                                                                               |
+|----------------------|------------------|-----|-----|-----|-----|------|-----|-----|-----|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `id`                 | `INT`            | ✅  |     | ✅  |     |      |     |     | ✅  | `AUTO_INCREMENT`   | Descripción: Identificador único para cada programa saludable.<br> Naturaleza: Cuantitativa.<br> Dominio: Enteros Positivos.<br> Composición: 1{0-9}. |
+| `nombre`             | `VARCHAR(255)`    |     |     | ✅  |     |      |     |     |     |                    | Descripción: Nombre del programa saludable.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos y espacios.<br> Composición: 1{A-Z a-z  }255. |
+| `descripcion`        | `VARCHAR(500)`    |     |     |     |     |      |     |     |     |                    | Descripción: Explicación o detalles del programa saludable.<br> Naturaleza: Cualitativa.<br> Dominio: Texto libre con longitud variable.<br> Composición: 0{A-Z a-z 0-9 , .-}500. |
+| `fecha_inicio`       | `DATETIME`       |     |     | ✅  |     |      |     |     |     |                    | Descripción: Fecha de inicio del programa saludable.<br> Naturaleza: Cuantitativa.<br> Dominio: Fecha y Hora.<br> Composición: Año = 4{0-9}, Mes = [01|02|...|12], Día = [01|02|...|31], Hora = [00|01|...|23], Minuto = [00 01 ... 59], Segundo = [00|01|...|59]. |
+| `fecha_finalizacion` | `DATETIME`       |     |     |     |     |      |     |     |     |                    | Descripción: Fecha de finalización del programa saludable.<br> Naturaleza: Cuantitativa.<br> Dominio: Fecha y Hora.<br> Composición: Año = 4{0-9}, Mes = [01 02 ... 12], Día = [01 02 ... 31], Hora = [00 01 ... 23], Minuto = [00 01 ... 59], Segundo = [00 01 ... 59]. |
+| `id_dietas`          | `INT`            |     | ✅  |     |     |      |     |     |     |                    | Descripción: Identificador de la dieta asociada al programa saludable.<br> Naturaleza: Cuantitativa.<br> Dominio: Enteros Positivos.<br> Composición: 1{0-9}. |
+| `id_entrenador`      | `INT`            |     | ✅  |     |     |      |     |     |     |                    | Descripción: Identificador del entrenador asignado al programa saludable.<br> Naturaleza: Cuantitativa.<br> Dominio: Enteros Positivos.<br> Composición: 1{0-9}. |
+| `id_user`            | `INT`            |     | ✅  |     |     |      |     |     |     |                    | Descripción: Identificador del usuario al que se le asigna el programa saludable.<br> Naturaleza: Cuantitativa.<br> Dominio: Enteros Positivos.<br> Composición: 1{0-9}. |
+| `fecha_registro`     | `DATETIME`       |     |     | ✅  |     |      |     |     |     | `CURRENT_TIMESTAMP` | Descripción: Fecha y hora en la que se registró el programa saludable.<br> Naturaleza: Cuantitativa.<br> Dominio: Fecha y Hora.<br> Composición: Año = 4{0-9}, Mes = [01 02 ... 12], Día = [01 02 ... 31], Hora = [00 01 ... 23], Minuto = [00 01 ... 59], Segundo = [00 01 ... 59]. |
+| `fecha_actualizacion`| `DATETIME`       |     |     |     |     |      |     |     |     |                    | Descripción: Fecha y hora de la última actualización del programa saludable.<br> Naturaleza: Cuantitativa.<br> Dominio: Fecha y Hora.<br> Composición: Año = 4{0-9}, Mes = [01 02 ... 12], Día = [01 02 ... 31], Hora = [00 01 ... 23], Minuto = [00 01 ... 59], Segundo = [00 01 ... 59]. |
 
----
-
-### 📘 Diccionario de Datos: Tabla `tbd_programas_saludables`
-
-| **Nombre del Campo**      | **Tipo de Dato** | **Tamaño / Formato**      | **Nulo** | **Descripción**                                                             |
-|---------------------------|------------------|----------------------------|----------|------------------------------------------------------------------------------|
-| `id`                      | INTEGER          | Autoincremental            | No       | Identificador único del programa saludable.                                 |
-| `nombre`                  | VARCHAR           | Hasta 255 caracteres       | No       | Nombre que identifica el programa.                                          |
-| `descripcion`             | VARCHAR           | Hasta 500 caracteres       | Sí       | Información detallada sobre el programa.                                    |
-| `fecha_inicio`            | DATETIME          | AAAA-MM-DD HH:MM:SS        | No       | Fecha en la que comienza el programa.                                       |
-| `fecha_finalizacion`      | DATETIME          | AAAA-MM-DD HH:MM:SS        | Sí       | Fecha de término del programa.                                              |
-| `id_dietas`               | VARCHAR           | Hasta 255 caracteres       | Sí       | Referencia(s) a dietas relacionadas.                                        |
-| `id_entrenador`           | VARCHAR           | Hasta 255 caracteres       | Sí       | Identificador del entrenador asignado.                                      |
-| `id_user`                 | INTEGER           | Numérico                   | Sí       | Llave foránea que indica el usuario asignado.                               |
-| `fecha_registro`          | DATETIME          | AAAA-MM-DD HH:MM:SS        | No       | Fecha en la que se registró el programa.                                    |
-| `fecha_actualizacion`     | DATETIME          | AAAA-MM-DD HH:MM:SS        | Sí       | Fecha de la última actualización.                                           |
 
 ---
 
