@@ -5,36 +5,24 @@
 
 ### 🗄️ Columns
 
-| Column | DataType | PK | FK | NN | UQ | BIN | UN | ZF | AI | Default | Comment |
-|--------|----------|----|----|----|----|-----|----|----|----|---------|---------|
-| `curp` | `VARCHAR(18)` |  |  |  | ✅ |  |  |  |  |  | Descripción: Clave Única de Registro de Población del usuario.<br>Naturaleza: Alfanumérico.<br>Dominio: 18 caracteres alfanuméricos. |
-| `fecha_ultima_de_evaluacion` | `DATE` |  |  |  |  |  |  |  |  |  | Descripción: Fecha de la última evaluación médica del paciente.<br>Naturaleza: Cuantitativo.<br>Dominio: Fecha en formato YYYY-MM-DD. |
-| `antecedentes_medicos` | `TEXT` |  |  |  |  |  |  |  |  |  | Descripción: Información sobre enfermedades o condiciones médicas previas del paciente.<br>Naturaleza: Cualitativo.<br>Dominio: Texto libre. |
-| `lesiones_previas` | `TEXT` |  |  |  |  |  |  |  |  |  | Descripción: Registro de lesiones que haya sufrido anteriormente el paciente.<br>Naturaleza: Cualitativo.<br>Dominio: Texto libre. |
-| `presion_sistolica` | `INT` |  |  |  |  |  | ✅ |  |  |  | Descripción: Medida de la presión arterial sistólica del paciente.<br>Naturaleza: Cuantitativo.<br>Dominio: Número entero positivo. |
-| `presion_diastolica` | `INT` |  |  |  |  |  | ✅ |  |  |  | Descripción: Medida de la presión arterial diastólica del paciente.<br>Naturaleza: Cuantitativo.<br>Dominio: Número entero positivo. |
-| `estatura` | `FLOAT` |  |  |  |  |  | ✅ |  |  |  | Descripción: Estatura del paciente en metros.<br>Naturaleza: Cuantitativo.<br>Dominio: Número decimal positivo. |
-| `peso` | `FLOAT` |  |  |  |  |  | ✅ |  |  |  | Descripción: Peso del paciente en kilogramos.<br>Naturaleza: Cuantitativo.<br>Dominio: Número decimal positivo. |
-| `fecha_registro` | `TIMESTAMP` |  |  | ✅ |  |  |  |  |  | `CURRENT_TIMESTAMP` | Descripción: Fecha y hora en que se registró el expediente.<br>Naturaleza: Cuantitativo.<br>Dominio: Formato de fecha y hora (YYYY-MM-DD HH:MM:SS). |
-| `usuario_id` | `INT` |  | ✅ |  |  |  | ✅ |  |  |  | Descripción: Identificador del usuario al que pertenece el expediente.<br>Naturaleza: Numérico.<br>Dominio: Entero positivo que corresponde a una llave foránea en la tabla de usuarios. |
-
----
-
-### 📘 Diccionario de Datos: Tabla `expediente_medico`
-
-| **Nombre del Campo**           | **Tipo de Dato** | **Tamaño / Formato** | **Nulo** | **Descripción**                                                                 |
-|-------------------------------|------------------|-----------------------|----------|----------------------------------------------------------------------------------|
-| `curp`                        | VARCHAR           | 18 caracteres aprox.  | Sí       | Clave Única de Registro de Población del paciente.                              |
-| `fecha_ultima_de_evaluacion` | DATE              | AAAA-MM-DD            | Sí       | Fecha de la última evaluación médica registrada.                                |
-| `antecedentes_medicos`       | TEXT              | -                     | Sí       | Información sobre enfermedades o condiciones médicas previas.                   |
-| `lesiones_previas`           | TEXT              | -                     | Sí       | Registro de lesiones anteriores del paciente.                                   |
-| `presion_sistolica`          | INTEGER           | -                     | Sí       | Valor de la presión arterial sistólica (en mmHg).                               |
-| `presion_diastolica`         | INTEGER           | -                     | Sí       | Valor de la presión arterial diastólica (en mmHg).                              |
-| `estatura`                   | FLOAT             | Metros                | Sí       | Estatura del paciente en metros.                                                |
-| `peso`                       | FLOAT             | Kilogramos            | Sí       | Peso corporal del paciente en kilogramos.                                       |
-| `fecha_registro`             | DATETIME          | AAAA-MM-DD HH:MM:SS   | No       | Fecha y hora en que se registró el expediente.                                  |
-| `usuario_id`                 | INTEGER           | -                     | Sí       | ID del usuario relacionado con el expediente médico.                            |
-
+| Column                        | DataType      | PK  | FK  | NN  | UQ  | BIN | UN  | ZF  | AI  | Default            | Comment |
+|------------------------------|---------------|-----|-----|-----|-----|-----|-----|-----|-----|---------------------|---------|
+| `id`                         | INT           | ✅  |     | ✅  |     |     | ✅  |     | ✅  |                     | **Descripción:** Identificador único del expediente médico. <br>**Naturaleza:** Cuantitativa <br>**Dominio:** Enteros positivos <br>**Composición:** 1{0-9} |
+| `Nombre`                     | VARCHAR(50)   |     |     | ✅  |     |     |     |     |     |                     | **Descripción:** Nombre legal de la persona. <br>**Naturaleza:** Cualitativa <br>**Dominio:** Caracteres alfabéticos y espacios <br>**Composición:** 0{A-Z|a-z| |}80 |
+| `Apellido`                   | VARCHAR(50)   |     |     | ✅  |     |     |     |     |     |                     | **Descripción:** Apellido legal de la persona. <br>**Naturaleza:** Cualitativa <br>**Dominio:** Caracteres alfabéticos y espacios <br>**Composición:** 0{A-Z|a-z| |}80 |
+| `Fecha_Nacimiento`          | DATE          |     |     | ✅  |     |     |     |     |     |                     | **Descripción:** Fecha de nacimiento. <br>**Naturaleza:** Cuantitativa <br>**Dominio:** Fechas válidas <br>**Composición:** YYYY-MM-DD |
+| `Sexo`                       | ENUM(...)     |     |     | ✅  |     |     |     |     |     |                     | **Descripción:** Género biológico. <br>**Naturaleza:** Cualitativa <br>**Dominio:** ['Masculino', 'Femenino', 'Otro'] <br>**Composición:** Valor de la lista |
+| `Curp`                       | VARCHAR(18)   |     |     | ✅  | ✅  |     |     |     |     |                     | **Descripción:** Clave Única de Registro de Población. <br>**Naturaleza:** Cualitativa <br>**Dominio:** CURP oficial <br>**Composición:** ^[A-Z]{4}\\d{6}[HM][A-Z]{5}[A-Z0-9]{2}$ |
+| `Fecha_registro`            | TIMESTAMP     |     |     | ✅  |     |     |     |     |     | CURRENT_TIMESTAMP  | **Descripción:** Fecha de creación del registro. <br>**Naturaleza:** Cuantitativa <br>**Dominio:** Fecha y hora <br>**Composición:** YYYY-MM-DD HH:MM:SS |
+| `Direccion`                  | VARCHAR(255)  |     |     |     |     |     |     |     |     |                     | **Descripción:** Lugar de residencia. <br>**Naturaleza:** Cualitativa <br>**Dominio:** Texto <br>**Composición:** [Calle, Número, Colonia, Ciudad, Estado, CP, País] |
+| `Telefono`                   | VARCHAR(15)   |     |     |     |     |     |     |     |     |                     | **Descripción:** Número telefónico. <br>**Naturaleza:** Cualitativa <br>**Dominio:** Texto <br>**Composición:** [País, Área, Número, Extensión] |
+| `Correo_electronico`        | VARCHAR(100)  |     |     |     |     |     |     |     |     |                     | **Descripción:** Correo electrónico personal. <br>**Naturaleza:** Cualitativa <br>**Dominio:** Texto <br>**Composición:** [usuario@dominio.ext] |
+| `Fecha_ultima_de_evaluacion`| DATE          |     |     | ✅  |     |     |     |     |     |                     | **Descripción:** Última fecha de evaluación médica. <br>**Naturaleza:** Cuantitativa <br>**Dominio:** Fecha válida <br>**Composición:** YYYY-MM-DD |
+| `Antecedentes_medicos`      | TEXT          |     |     |     |     |     |     |     |     |                     | **Descripción:** Historial médico previo. <br>**Naturaleza:** Cualitativa <br>**Dominio:** Texto libre <br>**Composición:** Enfermedades, alergias, etc. |
+| `Lesiones_previas`          | TEXT          |     |     | ✅  |     |     |     |     |     |                     | **Descripción:** Registro de lesiones anteriores. <br>**Naturaleza:** Cualitativa <br>**Dominio:** Texto libre <br>**Composición:** Tipo, Fecha, Tratamiento, Estado |
+| `Presion_arterial`          | VARCHAR(20)   |     |     |     |     |     |     |     |     |                     | **Descripción:** Medición de presión arterial. <br>**Naturaleza:** Cualitativa <br>**Dominio:** Texto <br>**Composición:** [Sistólica/Diastólica] |
+| `Estatura`                  | DECIMAL(5,2)  |     |     |     |     |     | ✅  |     |     |                     | **Descripción:** Altura en metros. <br>**Naturaleza:** Cuantitativa <br>**Dominio:** Números decimales positivos <br>**Composición:** Estatura = Valor + Unidad (cm) |
+| `Peso`                      | DECIMAL(5,2)  |     |     |     |     |     | ✅  |     |     |                     | **Descripción:** Peso en kilogramos. <br>**Naturaleza:** Cuantitativa <br>**Dominio:** Números decimales positivos <br>**Composición:** Peso = Valor + Unidad (kg) |
 ---
 
 ## 👥 Equipo de Desarrollo  

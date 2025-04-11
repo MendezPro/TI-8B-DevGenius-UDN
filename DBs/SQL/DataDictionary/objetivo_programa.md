@@ -4,27 +4,14 @@
 
 ### 🗄️ Columns
 
-| Column              | DataType      | PK  | FK | NN  | UQ | BIN | UN | ZF | AI  | Default                          | Comment |
-|---------------------|---------------|-----|----|-----|----|-----|----|----|-----|----------------------------------|---------|
-| `id`                | `INT`         | 🔑  |    | ✅  |    |     | ✅ |    | ✅  |                                  | Descripción: Identificador único del objetivo del programa.<br>Naturaleza: Numérico.<br>Dominio: Entero positivo autoincrementable. |
-| `nombre`            | `VARCHAR(255)`|     |    | ✅  |    |     |    |    |     |                                  | Descripción: Nombre del objetivo.<br>Naturaleza: Cualitativo.<br>Dominio: Texto de hasta 255 caracteres. |
-| `descripcion`       | `VARCHAR(500)`|     |    | ✅  |    |     |    |    |     |                                  | Descripción: Detalle del objetivo del programa.<br>Naturaleza: Cualitativo.<br>Dominio: Texto de hasta 500 caracteres. |
-| `estado`            | `INT`         |     |    | ✅  |    | ✅  | ✅ |    |     |                                  | Descripción: Indica si el objetivo está activo (1) o inactivo (0).<br>Naturaleza: Binario.<br>Dominio: 0 o 1. |
-| `fecha_registro`    | `DATETIME`    |     |    |     |    |     |    |    |     | `CURRENT_TIMESTAMP`              | Descripción: Fecha y hora de registro del objetivo.<br>Naturaleza: Cuantitativo.<br>Dominio: Formato datetime. |
-| `fecha_actualizacion` | `DATETIME`  |     |    |     |    |     |    |    |     | `CURRENT_TIMESTAMP` (on update) | Descripción: Fecha de última modificación.<br>Naturaleza: Cuantitativo.<br>Dominio: Formato datetime. |
-
----
-
-### 📘 Diccionario de Datos: Tabla `tbc_objetivo_programa`
-
-| **Nombre del Campo**      | **Tipo de Dato** | **Tamaño / Formato**                 | **Nulo** | **Descripción**                                                             |
-|---------------------------|------------------|--------------------------------------|----------|------------------------------------------------------------------------------|
-| `id`                      | INTEGER          | Autoincremental                      | No       | Identificador único del objetivo en la base de datos.                       |
-| `nombre`                  | VARCHAR           | Hasta 255 caracteres                 | No       | Nombre identificador del objetivo.                                          |
-| `descripcion`             | VARCHAR           | Hasta 500 caracteres                 | No       | Descripción ampliada del objetivo del programa.                             |
-| `estado`                  | INTEGER           | 0 (Inactivo) / 1 (Activo)            | No       | Determina si el objetivo está en uso actualmente.                           |
-| `fecha_registro`          | DATETIME          | AAAA-MM-DD HH:MM:SS                  | Sí       | Fecha de creación del registro.                                             |
-| `fecha_actualizacion`     | DATETIME          | AAAA-MM-DD HH:MM:SS (actualizable)   | Sí       | Última vez que se actualizó el objetivo.                                    |
+| Column              | DataType          | PK  | FK  | NN  | UQ  | BIN  | UN  | ZF  | AI  | Default           | Comment                                                                                                                                                                                                                           |
+|---------------------|-------------------|-----|-----|-----|-----|------|-----|-----|-----|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ID`                | `INT`             | ✅  |     | ✅  |     |      |     |     | ✅  | `AUTO_INCREMENT`  | Descripción: Identificador único de cada objetivo dentro del sistema.<br> Naturaleza: Cuantitativa.<br> Dominio: Números enteros positivos.<br> Composición: 1{0-9}.                                                                 |
+| `nombre`            | `VARCHAR(100)`     |     |     | ✅  |     |      |     |     |     |                   | Descripción: Nombre descriptivo del objetivo.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos y espacios.<br> Composición: 1{A-Z|a-z| }100.                                                                           |
+| `descripcion`       | `TEXT`            |     |     |     |     |      |     |     |     |                   | Descripción: Explicación detallada del objetivo.<br> Naturaleza: Cualitativa.<br> Dominio: Texto libre con una longitud variable.<br> Composición: 1{A-Z|a-z|0-9|, .-}∞.                                                           |
+| `estado`            | `BIT(1)`          |     |     | ✅  |     |      |     |     |     | `b'1'`            | Descripción: Dato de auditoría que define el estado actual del registro, siendo 0 para datos no activos y 1 para datos activos en el sistema.<br> Naturaleza: Cuantitativo.<br> Dominio: Booleano.<br> Composición: {0|1}. |
+| `fecha_registro`    | `DATETIME`        |     |     | ✅  |     |      |     |     |     | `CURRENT_TIMESTAMP` | Descripción: Fecha y hora en la que se registró el objetivo en la base de datos.<br> Naturaleza: Cuantitativa.<br> Dominio: Formato 'YYYY-MM-DD HH:MM:SS'.<br> Composición: Año = 4{0-9}, Mes = [01|02|...|12], Día = [01|02|...|31]. |
+| `fecha_actualizacion`| `DATETIME`        |     |     |     |     |      |     |     |     |                   | Descripción: Fecha y hora de la última actualización del objetivo del programa.<br> Naturaleza: Cuantitativa.<br> Dominio: Fecha y hora en formato 'YYYY-MM-DD HH:MM:SS'.<br> Composición: Año = 4{0-9}, Mes = [01|02|...|12], Día = [01|02|...|31]. |
 
 ---
 
