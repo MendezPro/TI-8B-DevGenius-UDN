@@ -1,23 +1,21 @@
-## 🗂️ Table: `tbd_dietas`
+## 🗂️ Table: `tbc_ejercicios`
 
-**📝 Description**: Esta tabla almacena la información de las dietas asignadas a los usuarios, incluyendo el objetivo nutricional, tipo y frecuencia de ejercicios recomendados, consumo calórico diario y observaciones. Sirve como base para personalizar planes alimenticios en función del estado físico y metas del usuario.
+**📝 Description**: Esta tabla almacena información detallada sobre los ejercicios disponibles dentro del sistema, incluyendo su tipo, nivel de dificultad, recomendaciones, restricciones y estado. Sirve como base para construir rutinas de entrenamiento personalizadas para los usuarios.
 
 ### 🗄️ Columns
-
-| Column                   | DataType         | PK | FK | NN | UQ | BIN | UN | ZF | AI | Default          | Comment                                                                                                                                  |
-|--------------------------|------------------|----|----|----|----|-----|----|----|----|------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `ID`                      | `INT`            | ✅  |    | ✅  |    |     |    |    | ✅  | `AUTO_INCREMENT` | Descripción: Atributo identificador entero auto incremental que distingue de manera única a cada dieta.                                    |
-| `nombre`                  | `VARCHAR(45)`     |    |    | ✅  |    |     |    |    |    |                  | Descripción: Nombre de la dieta. Naturaleza: Cualitativa. Dominio: Caracteres alfanuméricos. Composición: 0{A-Z|a-z|0-9| }45.              |
-| `Objetivo`                | `ENUM('Perdida de Peso', 'Aumento de masa muscular', 'Mantenimiento')` |    |    | ✅  |    |     |    |    |    |                  | Descripción: Objetivo principal de la dieta. Naturaleza: Cualitativa. Dominio: Conjunto de valores permitidos. Composición: ['Perdida de Peso', 'Aumento de masa muscular', 'Mantenimiento']. |
-| `tipo_ejercicios_recomendados` | `ENUM('Cardio', 'Levantamiento de pesas', 'Ejercicios Técnicos')` |    |    | ✅  |    |     |    |    |    |                  | Descripción: Tipo de ejercicios recomendados para acompañar la dieta. Naturaleza: Cualitativa. Dominio: Conjunto de valores permitidos. Composición: ['Cardio', 'Levantamiento de pesas', 'Ejercicios Técnicos']. |
-| `dias_ejercicio`          | `ENUM('1 dia a la semana', '2 dias a la semana', '3 dias a la semana', '4 dias a la semana', '5 dias a la semana')` |    |    | ✅  |    |     |    |    |    |                  | Descripción: Número de días recomendados para ejercicio en la semana. Naturaleza: Cualitativa. Dominio: Conjunto de valores permitidos. Composición: ['1 dia a la semana', '2 dias a la semana', '3 dias a la semana', '4 dias a la semana', '5 dias a la semana']. |
-| `calorias_diarias`        | `DOUBLE`         |    |    | ✅  |    |     |    |    |    |                  | Descripción: Cantidad de calorías recomendadas por día. Naturaleza: Cuantitativo. Dominio: Número decimal positivo. Composición: Valor mayor a 0. |
-| `observaciones`           | `LONGTEXT`       |    |    |    |    |     |    |    |    |                  | Descripción: Información adicional o recomendaciones sobre la dieta. Naturaleza: Cualitativa. Dominio: Texto libre. |
-| `Estatus`                 | `BIT(1)`         |    |    | ✅  |    |     |    |    |    | `b'1'`           | Descripción: Estado de la dieta. 0 para inactiva, 1 para activa. Naturaleza: Cuantitativo. Dominio: Booleano. Composición: [0|1]. |
-| `Fecha_Registro`          | `DATETIME`       |    |    | ✅  |    |     |    |    |    | `CURRENT_TIMESTAMP` | Descripción: Fecha y hora de creación del registro de la dieta. Naturaleza: Cuantitativo. Dominio: Fecha y hora en formato 'YYYY-MM-DD HH:MM:SS'. |
-| `Fecha_Actualizacion`     | `DATETIME`       |    |    |    |    |     |    |    |    |                  | Descripción: Fecha y hora de la última actualización de la dieta. Naturaleza: Cuantitativo. Dominio: Fecha y hora en formato 'YYYY-MM-DD HH:MM:SS'. |
-
----
+| Column                  | DataType                                        | PK  | FK  | NN  | UQ  | BIN  | UN  | ZF  | AI  | Default         | Comment                                                                                                                                   |
+|-------------------------|-------------------------------------------------|-----|-----|-----|-----|------|-----|-----|-----|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| `ID`                    | `INT`                                           | ✅  |     | ✅  |     |      |     |     | ✅  | `AUTO_INCREMENT` | Descripción: Atributo identificador numérico incremental que distingue de manera única el ejercicio.<br> Naturaleza: Cuantitativa.<br> Dominio: Enteros positivos.<br> Composición: 1{0-9}. |
+| `Nombre`                | `VARCHAR(255)`                                  |     |     | ✅  |     |      |     |     |     |                 | Descripción: Valor que hace referencia al ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos, vocales con tilde, espacio separador.<br> Composición: 1{A-Z a-z}255. |
+| `Descripcion`           | `VARCHAR(255)`                                  |     |     | ✅  |     |      |     |     |     |                 | Descripción: Explicación del ejercicio y cómo llevarlo a cabo.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos, vocales con tilde, espacio separador.<br> Composición: 1{A-Z a-z}255. |
+| `Video`                 | `VARCHAR(255)`                                  |     |     |     |     |      |     |     |     |                 | Descripción: Nombre y extensión del archivo de video referente a la realización del ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfanuméricos y extensión permitida de video (e.g., .mp4, .avi).<br> Composición: 1{A-Za-z0-9_ -} + '.' + {mp4 avi mov webm}. |
+| `Tipo`                  | `ENUM('Aerobico', 'Resistencia', 'Flexibilidad', 'Fuerza')` |     |     | ✅  |     |      |     |     |     |                 | Descripción: Tipo de ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Conjunto de valores permitidos.<br> Composición: ['Aerobico', 'Resistencia', 'Flexibilidad', 'Fuerza']. |
+| `Estatus`               | `TINYINT(1)`                                    |     |     | ✅  |     |      |     |     |     |                 | Descripción: Estado del ejercicio (activo o inactivo).<br> Naturaleza: Cualitativa.<br> Dominio: Valores 0 y 1.<br> Composición: {0|1}. |
+| `Dificultad`            | `ENUM('Basico', 'Intermedio', 'Avanzado')`     |     |     | ✅  |     |      |     |     |     |                 | Descripción: Dificultad para realizar el ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Conjunto de valores permitidos.<br> Composición: ['Basico', 'Intermedio', 'Avanzado']. |
+| `Fecha_Registro`        | `DATETIME`                                      |     |     | ✅  |     |      |     |     |     |                 | Descripción: Fecha de registro del ejercicio en la base de datos.<br> Naturaleza: Cuantitativa.<br> Dominio: Fecha y hora en formato 'YYYY-MM-DD HH:MM:SS'.<br> Composición: Año = 4{0-9}, Mes = [01–12], Día = [01–31], Hora = [00–23], Minuto = [00–59], Segundo = [00–59]. |
+| `Fecha_Actualizacion`   | `DATETIME`                                      |     |     | ✅  |     |      |     |     |     |                 | Descripción: Fecha de la última actualización del ejercicio en la base de datos.<br> Naturaleza: Cuantitativa.<br> Dominio: Fecha y hora en formato 'YYYY-MM-DD HH:MM:SS'.<br> Composición: Año = 4{0-9}, Mes = [01–12], Día = [01–31], Hora = [00–23], Minuto = [00–59], Segundo = [00–59]. |
+| `Recomendaciones`       | `VARCHAR(255)`                                  |     |     |     |     |      |     |     |     |                 | Descripción: Recomendaciones para realizar el ejercicio.<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos, vocales con tilde, espacio separador.<br> Composición: 0{A-Z a-z }255. |
+| `Restricciones`         | `VARCHAR(255)`                                  |     |     |     |     |      |     |     |     |                 | Descripción: Restricciones para realizar el ejercicio (e.g., tipo de ropa recomendada).<br> Naturaleza: Cualitativa.<br> Dominio: Caracteres alfabéticos, vocales con tilde, espacio separador.<br> Composición: 0{A-Z} 255. |
 
 
 ## 👥 Equipo de Desarrollo  
@@ -29,6 +27,7 @@
 | **Julia Maday Martinez Santos** | [@JuliaMaday](https://github.com/JuliaMaday) | Desarrollador de Bases de Datos | ❌ Sin Comentarios |
 | **Esperanza Cruz Galindo** | [@Dulce990](https://github.com/Dulce990) | Desarrollador FrontEnd | ❌ Sin Comentarios |
 
-### ✒️ **Datos del Autor** 
+### ✒️ **Datos del Autor**
 
-**Creado por:** [@ZamyCuevas](https://github.com/ZamyCuevas)  
+**Creado por:** [@ZamyCuevas](https://github.com/ZamyCuevas)
+
